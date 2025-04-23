@@ -4,6 +4,11 @@
 sudo xbps-install -S curl
 ```
 
+### Void Setup (Base Only)
+ 
+ ```bash
+ bash <(curl -sL cutt.ly/evoid)
+ ```
 
 <br>
 <br>

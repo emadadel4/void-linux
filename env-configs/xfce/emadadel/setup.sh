@@ -76,8 +76,6 @@ echo -e "\033[1;33m[+] Add bash completion source line to .bashrc...\033[0m"
 sudo echo "source /usr/share/bash-completion/bash_completion" >> .bashrc
 source ~/.bashrc
 
-
-
 echo "Installing fonts..."
 curl -L -o fonts.tar.gz https://github.com/emadadel4/void-linux/raw/refs/heads/main/env-configs/xfce/emadadel/fonts.tar.gz
 tar -xvzf fonts.tar.gz -C .local/share/

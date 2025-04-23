@@ -76,12 +76,12 @@ echo -e "\033[1;33m[+] Add bash completion source line to .bashrc...\033[0m"
 sudo echo "source /usr/share/bash-completion/bash_completion" >> .bashrc
 source ~/.bashrc
 
-echo "Installing fonts..."
+echo -e "\033[1;33m[+] Installing fonts...\033[0m"
 curl -L -o fonts.tar.gz https://github.com/emadadel4/void-linux/raw/refs/heads/main/env-configs/xfce/emadadel/fonts.tar.gz
 tar -xvzf fonts.tar.gz -C .local/share/
 
-#echo "Restoring config files..."
-#curl -L -o config.tar.gz https://github.com/emadadel4/void-linux/raw/refs/heads/main/env-configs/xfce/emadadel/config.tar.gz
-#tar -xvzf config.tar.gz
+echo -e "\033[1;33m[+] Restoring config files...\033[0m"
+curl -L -o config.tar.gz https://github.com/emadadel4/void-linux/raw/refs/heads/main/env-configs/xfce/emadadel/config.tar.gz
+tar -xvzf config.tar.gz
 
 echo -e "\033[1;32m[✓] Setup completed successfully.\033[0m"

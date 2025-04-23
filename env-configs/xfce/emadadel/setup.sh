@@ -55,11 +55,6 @@ fi
 read -p $'\033[1;33m[i] Do you want to install virt-manager? (y/n): \033[0m' virt_answer
 if [[ "$virt_answer" =~ ^[Yy]$ ]]; then
     sudo xbps-install -S libvirt virt-manager virt-manager-tools qemu qemu-ga
-    sudo ln -s /etc/sv/libvirtd /var/service/
-    sudo ln -s /etc/sv/virtlockd /var/service/
-    sudo ln -s /etc/sv/virtlogd /var/service/
-    sudo usermod -aG libvirt $(whoami)
-    sudo usermod -aG kvm $(whoami)
 fi
 
 # Enable Bluetooth
@@ -81,5 +76,14 @@ echo -e "\033[1;33m[+] Add bash completion source line to .bashrc...\033[0m"
 sudo echo "source /usr/share/bash-completion/bash_completion" >> .bashrc
 source ~/.bashrc
 
+
+
+echo "Installing fonts..."
+curl -L -o fonts.tar.gz https://github.com/emadadel4/void-linux/raw/refs/heads/main/env-configs/xfce/emadadel/fonts.tar.gz
+tar -xvzf fonts.tar.gz -C .local/share/
+
+#echo "Restoring config files..."
+#curl -L -o config.tar.gz https://github.com/emadadel4/void-linux/raw/refs/heads/main/env-configs/xfce/emadadel/config.tar.gz
+#tar -xvzf config.tar.gz
 
 echo -e "\033[1;32m[✓] Setup completed successfully.\033[0m"

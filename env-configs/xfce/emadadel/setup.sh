@@ -80,7 +80,7 @@ sudo echo "source /usr/share/bash-completion/bash_completion" >> .bashrc
 source ~/.bashrc
 
 # Enable Audio
-echo -e "\033[1;33m[+] Enable Audio services...\033[0m"
-sudo ln -sf /usr/share/applications/pipewire-pulse.desktop /etc/xdg/autostart/pipewire-pulse.desktop
+#echo -e "\033[1;33m[+] Enable Audio services...\033[0m"
+#sudo ln -sf /usr/share/applications/pipewire-pulse.desktop /etc/xdg/autostart/pipewire-pulse.desktop
 
 echo -e "\033[1;32m[✓] Setup completed successfully.\033[0m"

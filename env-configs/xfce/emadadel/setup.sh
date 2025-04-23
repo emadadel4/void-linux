@@ -56,6 +56,8 @@ read -p $'\033[1;33m[i] Do you want to install virt-manager? (y/n): \033[0m' vir
 if [[ "$virt_answer" =~ ^[Yy]$ ]]; then
     sudo xbps-install -S libvirt virt-manager virt-manager-tools qemu qemu-ga
     sudo ln -s /etc/sv/libvirtd /var/service/
+    sudo ln -s /etc/sv/virtlockd /var/service/
+    sudo ln -s /etc/sv/virtlogd /var/service/
     sudo usermod -aG libvirt $(whoami)
     sudo usermod -aG kvm $(whoami)
 fi

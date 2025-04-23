@@ -38,7 +38,7 @@ declare -A menu=(
 # Fetch packages from GitHub and add to menu
 fetch_packages() {
 
-    echo -e "${YELLOW}Fetching package list...${NC}"
+    echo -e "${YELLOW}Loading package list...${NC}"
     if ! packages_json=$(curl -s "$PKG_URL"); then
         echo -e "${RED}Failed to fetch packages! Using default list.${NC}"
         menu["Packages"]="firefox,vlc,kitty,Back"
@@ -124,8 +124,7 @@ draw_menu() {
         fi
     done
     
-    echo -e "\n${BLUE}Controls:${NC}"
-    echo -e "↑/↓: Navigate  | Enter/Space to Select | Q to return"
+    echo -e "\n${YELLOW} ↑/↓: Navigate  | Enter/Space: Select | Q: Return"
 }
 
 # ===== PROCESS SELECTION =====

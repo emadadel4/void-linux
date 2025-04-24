@@ -78,7 +78,8 @@ source ~/.bashrc
 
 echo -e "\033[1;33m[+] Installing fonts...\033[0m"
 curl -L -o fonts.tar.gz https://github.com/emadadel4/void-linux/raw/refs/heads/main/env-configs/xfce/emadadel/fonts.tar.gz
-tar -xvzf fonts.tar.gz -C .local/share/
+sudo tar -xvf fonts.tar.gz -C /usr/share/fonts/ --strip-components=1
+sudo fc-cache -f -v
 
 echo -e "\033[1;33m[+] Restoring config files...\033[0m"
 curl -L -o config.tar.gz https://github.com/emadadel4/void-linux/raw/refs/heads/main/env-configs/xfce/emadadel/config.tar.gz
@@ -86,7 +87,3 @@ tar -xvzf config.tar.gz
 
 echo -e "\033[1;32m[✓] Setup completed successfully.\033[0m"
 
-
-curl -L -o fonts.tar.gz https://github.com/emadadel4/void-linux/raw/refs/heads/main/env-configs/xfce/emadadel/fonts.tar.gz
-sudo tar -xvf fonts.tar.gz -C /usr/share/fonts/ --strip-components=1
-sudo fc-cache -f -v

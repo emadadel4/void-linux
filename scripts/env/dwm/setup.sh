@@ -5,11 +5,10 @@ sudo xbps-install -Su
 
 echo "[+] Installing DWM dependencies..."
 sudo xbps-install -S \
-    xorg-server xinit xorg \
+    make xorg-server xinit xorg \
     libX11-devel libXft-devel libXinerama-devel \
     glib-devel font-inconsolata-otf \
-    git gcc make pkg-config man-pages-devel \
-    webkit2gtk-devel gcr-devel
+    git gcc make 
 
 echo "[+] Cloning suckless tools..."
 mkdir -p ~/src

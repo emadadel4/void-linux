@@ -4,7 +4,7 @@ echo "[+] Updating system..."
 sudo xbps-install -Su -y
 
 echo "[+] Installing DWM dependencies..."
-sudo xbps-install -S make libX11-devel libXft-devel libXinerama-devel glib-devel font-inconsolata-otf git gcc make  xorg-server xinit xorg xauth  -y 
+sudo xbps-install -S make libX11-devel libXft-devel libXinerama-devel glib-devel font-inconsolata-otf git gcc make xorg-server xinit xorg xauth  -y 
 
 echo "[+] Cloning suckless tools..."
 mkdir -p ~/src

@@ -30,6 +30,6 @@ cp config.def.h config.h
 sudo make clean install
 
 echo "[+] Creating .xinitrc..."
-echo 'exec dbus-launch --sh-syntax --exit-with-session dwm' > ~/.xinitrc
+echo 'dwm' > ~/.xinitrc
 
 echo "[+] Done. You can now start DWM with the 'startx' command."

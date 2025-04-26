@@ -13,7 +13,7 @@ sudo xbps-install -S curl
 <br>
 <br>
 
-### XFCE Configuration – Emad Adel's Preferences (Void With XFCE)
+### XFCE Configuration – Emad Adel's Preferences (XFCE Image)
 ```bash
 bash <(curl -sL https://raw.githubusercontent.com/emadadel4/Void-Linux/refs/heads/main/env-configs/xfce/emadadel/setup.sh)
 ```

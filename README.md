@@ -10,8 +10,7 @@ sudo xbps-install -S curl
  bash <(curl -sL cutt.ly/evoid)
  ```
 
-<br>
-<br>
+<hr>
 
 ### XFCE Configuration – Emad Adel's Preferences (XFCE Image)
 ```bash

@@ -6,9 +6,7 @@ These scripts handle the installation and setup of various desktop environments 
 
 ```Environment
 ├── KDE/
-│   └── mohamed/
 │       └── setup.sh
 ├── XFCE/
-│   └── emadadel/
 │       └── setup.sh
 ```

@@ -11,4 +11,6 @@ These scripts handle the installation and setup of various desktop environments 
 │       └── setup.sh
 ├── DWM/
 │       └── setup.sh
+├── YOUR ENV../
+│       └── setup.sh
 ```

@@ -3,8 +3,8 @@
 clear
 
 echo -e "\033[1;33m[+] Updating system...\033[0m"
-sudo xbps-install -Su
-sudo xbps-install -S void-repo-nonfree void-repo-multilib-nonfree void-repo-multilib
+sudo xbps-install -Su -y
+sudo xbps-install -S void-repo-nonfree void-repo-multilib-nonfree void-repo-multilib -y
 
 read -r -d '' PkgList <<'EOF'
 nano

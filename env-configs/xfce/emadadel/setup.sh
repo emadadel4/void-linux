@@ -77,7 +77,6 @@ sudo echo "source /usr/share/bash-completion/bash_completion" >> .bashrc
 source ~/.bashrc
 
 echo -e "\033[1;33m[+] Installing fonts...\033[0m"
-
 curl -LO https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/JetBrainsMono.zip
 mkdir -p ~/.fonts/JetBrainsMono
 unzip JetBrainsMono.zip -d ~/.fonts/JetBrainsMono

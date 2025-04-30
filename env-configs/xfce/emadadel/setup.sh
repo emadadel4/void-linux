@@ -16,7 +16,7 @@ vlc
 uget
 redshift
 redshift-gtk
-kitty
+alacritty
 bash-completion
 freerdp
 SDL2_ttf

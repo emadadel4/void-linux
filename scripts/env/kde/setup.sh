@@ -13,7 +13,8 @@ NetworkManager
 bluez 
 blueman 
 libspa-bluetooth 
-pipewire wireplumber 
+pipewire 
+wireplumber 
 pavucontrol 
 ffmpeg 
 ffmpegthumbnailer 

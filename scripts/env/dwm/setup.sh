@@ -4,7 +4,7 @@ echo "[+] Updating system..."
 sudo xbps-install -Su -y
 
 echo "[+] Installing DWM dependencies..."
-sudo xbps-install -S vim make patch libX11-devel pkg-config libXft-devel libXinerama-devel glib-devel font-inconsolata-otf git xsetroot gcc make xorg-server xinit xorg xauth  -y 
+sudo xbps-install -S vim make patch libX11-devel pkg-config libXft-devel libXinerama-devel glib-devel font-inconsolata-otf git xsetroot gcc make xorg-server xinit xorg xauth firefox  -y 
 
 libX11-devel libXft-devel libXinerama-devel
 

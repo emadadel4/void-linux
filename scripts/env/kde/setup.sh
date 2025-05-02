@@ -22,7 +22,7 @@ sddm
 firefox
 EOF
 
-sudo xbps-install -S $PkgList
+sudo xbps-install -S $PkgList -y
 
 echo "\033[33m[+] Enabling essential services...\033[0m"
 sudo rfkill unblock bluetooth

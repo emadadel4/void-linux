@@ -19,6 +19,8 @@ ffmpeg
 ffmpegthumbnailer 
 kdegraphics-thumbnailers
 dbus
+xorg
+sddm
 EOF
 
 sudo xbps-install -S $PkgList
@@ -26,8 +28,8 @@ sudo xbps-install -S $PkgList
 echo "\033[33m[+] Enabling essential services...\033[0m"
 sudo rfkill unblock bluetooth
 sudo ln -sf /etc/sv/NetworkManager /var/service
-sudo ln -sf /etc/sv/dbus /var/service
 sudo ln -s /usr/share/applications/pipewire-pulse.desktop /etc/xdg/autostart/pipewire-pulse.desktop
 sudo ln -sf /etc/sv/bluetoothd /var/service
 sudo ln -sf /etc/sv/sddm /var/service
+sudo ln -sf /etc/sv/dbus /var/service
 echo -e "\033[33m[!] Done.\033[0m"

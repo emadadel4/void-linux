@@ -16,9 +16,6 @@ libspa-bluetooth
 pipewire 
 wireplumber 
 pavucontrol 
-ffmpeg 
-ffmpegthumbnailer 
-kdegraphics-thumbnailers
 dbus
 xorg
 sddm

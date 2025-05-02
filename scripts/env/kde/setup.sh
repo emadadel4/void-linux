@@ -19,6 +19,7 @@ pavucontrol
 dbus
 xorg
 sddm
+firefox
 EOF
 
 sudo xbps-install -S $PkgList

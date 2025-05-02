@@ -10,10 +10,3 @@ sudo xbps-install -S curl
  bash <(curl -sL cutt.ly/evoid)
  ```
 
-<hr>
-
-### XFCE Configuration – Emad Adel's Preferences (XFCE Image)
-```bash
-bash <(curl -sL https://raw.githubusercontent.com/emadadel4/Void-Linux/refs/heads/main/env-configs/xfce/emadadel/setup.sh)
-```
-

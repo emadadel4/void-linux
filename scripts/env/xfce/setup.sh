@@ -22,6 +22,7 @@ bluez
 libspa-bluetooth
 blueman
 nano
+firefox
 EOF
 
 sudo xbps-install -S $PkgList

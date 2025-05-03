@@ -9,6 +9,7 @@ sudo xbps-install -S void-repo-nonfree void-repo-multilib-nonfree void-repo-mult
 read -r -d '' PkgList <<'EOF'
 nano
 xrandr
+zsh
 bluez
 blueman
 libspa-bluetooth

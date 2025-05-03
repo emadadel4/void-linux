@@ -1,4 +1,4 @@
-# Setup environment & Window manager scripts
+# Setup Environment & Window manager scripts
 
 These scripts handle the installation and setup of various desktop environments on Void base image.
 

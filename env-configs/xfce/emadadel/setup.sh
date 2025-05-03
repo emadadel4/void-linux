@@ -43,7 +43,7 @@ xfce4-screenshooter
 EOF
 
 echo -e "\033[1;33m[+] Installing base packages...\033[0m"
-sudo xbps-install -S $PkgList
+sudo xbps-install -S $PkgList -y
 
 # Gaming packages
 read -p $'\033[1;33m[i] Do you want Gaming on Void? (y/n): \033[0m' gaming_answer

@@ -77,12 +77,12 @@ cursor=0
 # ===== DESKTOP ENVIRONMENT FUNCTIONS =====
 install_kde() {
     echo -e "\n${GREEN}Installing KDE Plasma Desktop...${NC}"
-    curl -sL https://raw.githubusercontent.com/emadadel4/Void-Linux/main/kde/setup.sh | bash
+    curl -sL https://raw.githubusercontent.com/emadadel4/void-Linux/main/kde/setup.sh | bash
 }
 
 install_xfce() {
     echo -e "\n${GREEN}Installing XFCE Desktop...${NC}"
-    curl -sL https://raw.githubusercontent.com/emadadel4/Void-Linux/main/xfce/setup.sh | bash
+    curl -sL https://raw.githubusercontent.com/emadadel4/void-Linux/main/xfce/setup.sh | bash
 }
 
 install_dwm() {

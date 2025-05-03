@@ -83,8 +83,9 @@ unzip JetBrainsMono.zip -d ~/.fonts/JetBrainsMono
 fc-cache -f -v
 
 echo -e "\033[1;33m[+] Restoring configs files...\033[0m"
-curl -Lo config.tar.gz https://github.com/emadadel4/void-linux/raw/refs/heads/main/env-configs/xfce/emadadel/config.tar.gz
-tar -xvzf config.tar.gz
+curl -Lo config.tar https://github.com/emadadel4/void-linux/raw/refs/heads/main/env-configs/xfce/emadadel/config.tar
+tar -xvf config.tar
+
 
 echo -e "\033[1;32m[✓] Setup completed successfully.\033[0m"
 

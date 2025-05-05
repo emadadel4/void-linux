@@ -43,7 +43,7 @@ telegram-desktop
 xfce4-screenshooter
 EOF
 
-echo -e "\033[1;33m[+] Installing base packages...\033[0m"
+echo -e "\033[1;33m[+] Installing base packages\033[0m"
 sudo xbps-install -S $PkgList -y
 
 # Gaming packages
@@ -59,7 +59,7 @@ if [[ "$virt_answer" =~ ^[Yy]$ ]]; then
 fi
 
 # Enable Bluetooth
-echo -e "\033[1;33m[+] Enabling Bluetooth services...\033[0m"
+echo -e "\033[1;33m[+] Enabling Bluetooth services\033[0m"
 sudo rfkill unblock bluetooth
 sudo ln -sf /etc/sv/bluetoothd /var/service/
 
@@ -68,22 +68,22 @@ echo -e "Setup GPU drivers settings"
 echo "options i915 enable_dc=2 enable_fbc=1 fastboot=1 modeset=1" | sudo tee /etc/modprobe.d/intel-graphics.conf
 
 # EFI fix
-echo -e "\033[1;33m[+] Making Void GRUB bootable from fallback...\033[0m"
+echo -e "\033[1;33m[+] Making Void GRUB bootable from fallback\033[0m"
 sudo mkdir -p /boot/efi/EFI/BOOT
 sudo cp /boot/efi/EFI/void_grub/grubx64.efi /boot/efi/EFI/BOOT/BOOTX64.EFI
 
 # Bash completion
-echo -e "\033[1;33m[+] Add bash completion source line to .bashrc...\033[0m"
+echo -e "\033[1;33m[+] Add bash completion source line to .bashrc\033[0m"
 sudo echo "source /usr/share/bash-completion/bash_completion" >> .bashrc
 source ~/.bashrc
 
-echo -e "\033[1;33m[+] Installing fonts...\033[0m"
+echo -e "\033[1;33m[+] Installing fonts\033[0m"
 curl -LO https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/JetBrainsMono.zip
 mkdir -p ~/.fonts/JetBrainsMono
 unzip JetBrainsMono.zip -d ~/.fonts/JetBrainsMono
 fc-cache -f -v
 
-echo -e "\033[1;33m[+] Restoring configs files...\033[0m"
+echo -e "\033[1;33m[+] Restoring XFCE Settings\033[0m"
 curl -Lo config.tar https://github.com/emadadel4/void-linux/raw/refs/heads/main/env-configs/xfce/emadadel/config.tar
 tar -xvf config.tar
 

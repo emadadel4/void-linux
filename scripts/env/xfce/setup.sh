@@ -23,6 +23,7 @@ libspa-bluetooth
 blueman
 nano
 firefox
+gvfs
 polkit
 udisks2
 xauth

@@ -23,6 +23,10 @@ libspa-bluetooth
 blueman
 nano
 firefox
+polkit
+udisks2
+xauth
+xfce-polkit
 EOF
 
 sudo xbps-install -S $PkgList
@@ -32,5 +36,8 @@ sudo ln -sf /etc/sv/NetworkManager /var/service
 sudo ln -sf /etc/sv/bluetoothd /var/service
 sudo ln -s /usr/share/applications/pipewire-pulse.desktop /etc/xdg/autostart/pipewire-pulse.desktop
 sudo ln -sf /etc/sv/lightdm /var/service/
+sudo ln -sf /etc/sv/polkitd /var/service/
+sudo ln -sf /etc/sv/udevd /var/service/
 sudo ln -sf /etc/sv/dbus /var/service
+
 echo -e "\033[33m[!] Done.\033[0m"

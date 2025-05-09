@@ -26,7 +26,6 @@ firefox
 gvfs
 polkit
 udisks2
-xauth
 xfce-polkit
 EOF
 

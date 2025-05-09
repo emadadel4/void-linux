@@ -34,11 +34,11 @@ libgcc-32bit
 libstdc++-32bit 
 libdrm-32bit 
 libglvnd-32bit
+mesa-intel-dri 
+libva-intel-driver 
 amberol
 fish-shell
 nodejs
-mesa-intel-dri 
-libva-intel-driver 
 telegram-desktop
 xfce4-screenshooter
 EOF
@@ -50,6 +50,7 @@ sudo xbps-install -S $PkgList -y
 read -p $'\033[1;33m[i] Do you want Gaming on Void? (y/n): \033[0m' gaming_answer
 if [[ "$gaming_answer" =~ ^[Yy]$ ]]; then
     sudo xbps-install -S wine wine-32bit winetricks lutris gamemode
+    sudo xbps-install -S mesa-dri-32bit mesa-vulkan-intel  mesa-vulkan-intel-32bit  vulkan-loader-32bit  intel-video-accel gnutls-32bit  libgcc-32bit  libstdc++-32bit  libdrm-32bit  libglvnd-32bit mesa-intel-dri  libva-intel-driver 
 fi
 
 # Virtualization packages

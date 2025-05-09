@@ -20,6 +20,10 @@ dbus
 xorg
 sddm
 firefox
+xfce-polkit
+polkit
+udisks2
+gvfs
 EOF
 
 sudo xbps-install -S $PkgList -y
@@ -30,5 +34,7 @@ sudo ln -sf /etc/sv/NetworkManager /var/service
 sudo ln -sf /usr/share/applications/pipewire-pulse.desktop /etc/xdg/autostart/pipewire-pulse.desktop
 sudo ln -sf /etc/sv/bluetoothd /var/service
 sudo ln -sf /etc/sv/sddm /var/service
+sudo ln -sf /etc/sv/polkitd /var/service/
+sudo ln -sf /etc/sv/udevd /var/service/
 sudo ln -sf /etc/sv/dbus /var/service
 echo -e "\033[33m[!] Done.\033[0m"

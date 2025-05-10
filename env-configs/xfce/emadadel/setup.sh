@@ -20,7 +20,6 @@ redshift-gtk
 alacritty
 bash-completion
 freerdp
-SDL2_ttf
 unzip
 unrar
 git

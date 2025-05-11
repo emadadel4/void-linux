@@ -20,10 +20,6 @@ dbus
 xorg
 sddm
 firefox
-xfce-polkit
-polkit
-udisks2
-gvfs
 EOF
 
 sudo xbps-install -S $PkgList -y

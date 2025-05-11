@@ -7,7 +7,6 @@ echo -e "\e[1;33m[+] Installing XFCE minimal environment...\e[0m"
 
 # Define packages minimal package
 read -r -d '' PkgList <<'EOF'
-dbus
 xfce4 
 xfce4-terminal 
 lightdm 
@@ -30,6 +29,7 @@ gvfs-mtp
 gvfs-smb 
 udisks2
 xfce-polkit
+dbus
 EOF
 
 sudo xbps-install -S $PkgList -y

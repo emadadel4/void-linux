@@ -7,7 +7,7 @@
 </div>
 
 
-## Run it directly
+### Run it directly
 
 
  ```
@@ -20,7 +20,7 @@ sudo xbps-install -S curl
 
 or
 
-## Clone it
+### Clone it
 ```bash
 sudo xbps-install -S git
 ```

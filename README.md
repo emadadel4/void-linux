@@ -1,12 +1,23 @@
-### Install curl (Required) 
+## Run it directly
+Void Setup (Base Image Only)
 
-```bash
+
+ ```
 sudo xbps-install -S curl
 ```
 
-### Void Setup (Base Image Only)
- 
  ```bash
  bash <(curl -sL cutt.ly/evoid)
  ```
+
+or
+
+## Clone it
+```bash
+sudo xbps-install -S git
+```
+
+```bash
+git clone https://github.com/emadadel4/void-linux.git
+```
 

@@ -13,7 +13,7 @@ xfce4-terminal
 lightdm 
 lightdm-gtk-greeter
 NetworkManager
-pipewire 
+pipewire
 wireplumber 
 pavucontrol 
 xorg
@@ -25,11 +25,14 @@ nano
 firefox
 gvfs
 polkit
+gvfs-afc 
+gvfs-mtp 
+gvfs-smb 
 udisks2
 xfce-polkit
 EOF
 
-sudo xbps-install -S $PkgList
+sudo xbps-install -S $PkgList -y
 
 echo "\033[33m[+] Enabling essential services...\033[0m"
 sudo ln -sf /etc/sv/NetworkManager /var/service

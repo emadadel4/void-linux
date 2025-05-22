@@ -29,3 +29,7 @@ sudo xbps-install -S git
 git clone https://github.com/emadadel4/void-linux.git
 ```
 
+```bash
+cd void-linux
+chmod +x void.sh
+```

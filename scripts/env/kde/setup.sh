@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo -e "\033[33m[+] Updating system...\033[0m"
+sudo xbps-install -u xbps
 sudo xbps-install -Su -y
 
 echo -e "\e[1;33m[+] Installing KDE minimal environment...\e[0m"

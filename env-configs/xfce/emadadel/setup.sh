@@ -3,6 +3,7 @@
 clear
 
 echo -e "\033[1;33m[+] Updating system...\033[0m"
+sudo xbps-install -u xbps
 sudo xbps-install -Su -y
 sudo xbps-install -S void-repo-nonfree void-repo-multilib-nonfree void-repo-multilib -y
 
